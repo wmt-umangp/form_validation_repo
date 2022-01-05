@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery form validation</title>
+    <link rel="stylesheet" href="../css_files/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js_files/validate.js"></script>
+
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <h2>Login</h2> 
+
+            <label for="uname">Username:</label>
+            <input type="text" id="uname" maxlength="8">
+            <h4 id="unamecheck">*please enter Username</h4> <br><br>
+            
+            <label for="email">Email:</label>
+            <input type="text" id="email">
+            <h4 id="emailcheck">*please enter Email-id</h4> <br><br>
+
+            <label for="psw">password:</label>
+            <input type="password" id="psw" maxlength="10">
+            <h4 id="pswcheck">*please enter password</h4> <br><br>
+
+            <label for="cpsw">Confirm password:</label>
+            <input type="password" id="cpsw" maxlength="10">
+            <h4 id="cpswcheck">*please re-enter password</h4> <br><br> <br>
+
+            <center><input type="submit"  id="login" value="Login"></center>
+
+
+            <br><br>
+
+        </fieldset>
+    </form>
+</body>
+</html>
