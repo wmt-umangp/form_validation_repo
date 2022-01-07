@@ -1,26 +1,25 @@
-$(document).ready(function(){
+$(document).ready(function () {
     $("#unamecheck").hide();
     $("#emailcheck").hide();
     $("#pswcheck").hide();
     $("#cpswcheck").hide();
 
     //validate username
-    let unameError=true;
-    $("#uname").keyup(function(){
+    let unameError = true;
+    $("#uname").keyup(function () {
         validateuname();
     });
-    function validateuname(){
-        let uname=$("#uname").val();
-        if(uname.length==""){
+
+    function validateuname() {
+        let uname = $("#uname").val();
+        if (uname.length == "") {
             $("#unamecheck").show();
-            unameError=false;
+            unameError = false;
             return false;
-        }
-        else if ((uname.length<3) || (uname.length>8)){
+        } else if ((uname.length < 3) || (uname.length > 8)) {
             $("#unamecheck").show();
             $("#unamecheck").html("*length of Username must be between 3 to 8");
-        }
-        else{
+        } else {
             $("#unamecheck").hide();
         }
     }
@@ -61,7 +60,7 @@ $(document).ready(function(){
 
     //validate pass
     let passError = true;
-    $("#psw").keyup(function() {
+    $("#psw").keyup(function () {
         validatepass();
     });
 
@@ -105,17 +104,16 @@ $(document).ready(function(){
     }
 
     //onclickv of submit buttons
-    $("#login").click(function(){
+    $("#login").click(function () {
         validateuname();
         validateemail();
         validatepass();
         validaterepass();
 
-        if((unameError == true) && (emailError == true) && (passError == true) && (repassError == true)){
+        if ((unameError == true) && (emailError == true) && (passError == true) && (repassError == true)) {
             return true;
-        }
-        else{
-             return false;
+        } else {
+            return false;
         }
     });
 });

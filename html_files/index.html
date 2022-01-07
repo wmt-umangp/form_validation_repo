@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,33 +11,35 @@
     <script src="../js_files/validate.js"></script>
 
 </head>
+
 <body>
-    <form action="">
-        <fieldset>
-            <h2>Login</h2> 
+    <fieldset>
+        <div class="container">
+        <form action="">
+            <h3>Login</h3>
+                <label for="uname"><b>Username</b></label>
+                <input type="text" id="uname" maxlength="8">
+                <span id="unamecheck">*Please Enter Username</span>
 
-            <label for="uname">Username:</label>
-            <input type="text" id="uname" maxlength="8">
-            <h4 id="unamecheck">*please enter Username</h4> <br><br>
-            
-            <label for="email">Email:</label>
-            <input type="text" id="email">
-            <h4 id="emailcheck">*please enter Email-id</h4> <br><br>
+                <label for="email"><b>Email-id</b></label>
+                <input type="text" id="email">
+                <span id="emailcheck">*Please Enter Email-id</span>
 
-            <label for="psw">password:</label>
-            <input type="password" id="psw" maxlength="10">
-            <h4 id="pswcheck">*please enter password</h4> <br><br>
+                <label for="psw"><b>Password</b></label>
+                <input type="password" id="psw" maxlength="10">
+                <span id="pswcheck">*Please Enter Password</span>
 
-            <label for="cpsw">Confirm password:</label>
-            <input type="password" id="cpsw" maxlength="10">
-            <h4 id="cpswcheck">*please re-enter password</h4> <br><br> <br>
+                <label for="cpsw"><b>Confirm Password</b></label>
+                <input type="password" id="cpsw" maxlength="10">
+                <span id="cpswcheck">*Please Confirm Password</span>
 
-            <center><input type="submit"  id="login" value="Login"></center>
-
+                <center><input type="submit" id="login" value="Login"></center>
+            </div>
 
             <br><br>
 
-        </fieldset>
+    </fieldset>
     </form>
 </body>
+
 </html>
