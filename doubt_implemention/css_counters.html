@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Counters</title>
+    <style>
+        body {
+            counter-reset: my-counter;
+            margin: 0;
+        }
+
+        h2::before {
+            counter-increment: my-counter 1;
+            content: counter(my-counter);
+            display: inline-block;
+            color: white;
+            background: #555;
+            border: 5px solid #555;
+            padding: 7px 15px;
+            margin-right: 16px;
+            border-radius: 50%;
+        }
+
+        h2 {
+            margin: 20px 0 0 50px;
+            font-family: "Segoe UI",Arial,sans-serif;
+        }
+        .main_container{
+            background-color: #555;
+        }
+        .container{
+            background-color: #42AA6D;
+            padding: 10px;
+            margin: auto;
+            width: 700px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Counters</h1>
+    <div class="main_container">
+        <div class="container">
+            <h2>Heading 1</h2>
+            <h2>Heading 2</h2>
+            <h2>Heading 3</h2>
+            <h2>Heading 4</h2>
+            <h2>Heading 5</h2>
+            <h2>Heading 6</h2>
+        </div>
+    </div>
+</body>
+
+</html>
