@@ -1,0 +1,42 @@
+.container{
+    display:flex;
+    background-color: #ffc6c6;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.container > div{
+    background-color: chocolate;
+    width: 200px;
+    margin: 10px;
+    padding: 20px;
+    text-align: justify;
+    opacity: 0.8;
+}
+.div1 p::first-line{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    color: yellow;
+}
+.div2 p::first-letter{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    color: yellow;
+}
+.div2 p::first-letter{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    color: yellow;
+}
+.div3 p::before{
+    content: "⌦";
+    color: yellow;
+}
+.div4 p::after{
+    content: "⌫";
+    color: yellow;
+}
+.div5 p::selection{
+    color: yellow;
+    background-color: green;
+}
